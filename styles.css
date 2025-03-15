@@ -1,0 +1,109 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #000;
+}
+
+.file-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+#fileInput {
+  padding: 8px;
+  border: 1px solid #000;
+  width: 80%;
+  max-width: 400px;
+  background: #fff;
+  color: #000;
+}
+
+#errorContainer {
+  background-color: #fff;
+  color: #f00;
+  padding: 12px;
+  margin: 20px 0;
+  border: 1px solid #f00;
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#downloadBtn {
+  background: none;
+  color: #000;
+  border: 1px solid #000;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#downloadBtn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.table-container {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #000;
+}
+
+th {
+  background: #000;
+  color: #fff;
+}
+
+td {
+  background: #fff;
+  color: #000;
+}
+
+tr:hover {
+  background: #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
+  .controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+  #downloadBtn {
+    width: 100%;
+  }
+}
